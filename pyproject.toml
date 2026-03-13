@@ -1,0 +1,28 @@
+[project]
+name = "rvmerge"
+version = "1.0.0"
+description = "A simple program to merge recto / verso PDFs."
+authors = [
+    { name = "Jean-Marie Couteyen", email = "jm_couteyen@yahoo.fr" }
+]
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "pikepdf",
+]
+
+[project.urls]
+Homepage = "https://github.com/jm-cc/rvmerge/"
+
+[project.scripts]
+rvmerge = "rvmerge.rvmerge:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
